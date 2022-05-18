@@ -5,6 +5,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import { connect } from "react-redux";
+import Header from "../header/Header";
 
 const EditEmployee = ({ getToken }) => {
   const { id } = useParams();
@@ -33,6 +34,9 @@ const EditEmployee = ({ getToken }) => {
   };
   return (
     <>
+      <div>
+          <Header/>
+      </div>
       <div className="edit-employee">
         <h1>Edit Employee</h1>
         <form onSubmit={submitHandler}>

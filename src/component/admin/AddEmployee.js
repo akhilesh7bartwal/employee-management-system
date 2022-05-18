@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { connect } from "react-redux";
+import Header from "../header/Header";
 
 const AddEmployee = ({ getToken }) => {
   const navigate = useNavigate();
@@ -40,6 +41,9 @@ const AddEmployee = ({ getToken }) => {
   };
   return (
     <>
+      <div>
+          <Header/>
+      </div>
       <div className="add-employee">
         <h1>Add Employee</h1>
         <form onSubmit={submitHandler}>
