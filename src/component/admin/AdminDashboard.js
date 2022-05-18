@@ -38,12 +38,11 @@ const AdminDashboard = ({getToken,getAdmin}) =>{
 
     return(
         <>
+      <div>
+          <Header/>
+      </div>
      <div className="admin-dashboard">
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
-        <div>
-          <Header/>
-        </div>
-
           <div>
             <div>Admin</div>
             <div>
@@ -51,11 +50,6 @@ const AdminDashboard = ({getToken,getAdmin}) =>{
             </div>
             <div>{getAdmin.email}</div>
           </div>
-        </div>
-        <div>
-          <Link to="/" style={{ color: "blue" }}>
-            Home
-          </Link>
         </div>
         <h1>Admin Dashboard</h1>
         <h2>All Employees</h2>
