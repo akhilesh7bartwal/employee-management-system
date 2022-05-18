@@ -6,6 +6,8 @@ import axios from "axios";
 
 import { connect } from "react-redux";
 import Header from "../header/Header";
+import { Button } from "@mui/material";
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const AdminDashboard = ({getToken,getAdmin}) =>{
 
@@ -57,10 +59,10 @@ const AdminDashboard = ({getToken,getAdmin}) =>{
         {employees.length > 0 && (
           <div className="employee-details">
             <h3>
-              <strong>First Name</strong>
+              <strong>Name</strong>
             </h3>
             <h3>
-              <strong>Last Name</strong>
+              <strong>Address</strong>
             </h3>
             <h3>
               <strong>Email</strong>
@@ -78,7 +80,8 @@ const AdminDashboard = ({getToken,getAdmin}) =>{
                 navigate(`/admin/edit/${employee._id}`);
               }}
             >
-              Edit
+              <button>Edit</button>
+              
             </div>
             <div
               className="delete"
@@ -86,13 +89,14 @@ const AdminDashboard = ({getToken,getAdmin}) =>{
                 deleteEmployee(employee._id);
               }}
             >
-              Delete
+              <Button variant="outlined" color="error" startIcon={<DeleteIcon/>}>Delete</Button>             
             </div>
           </div>
         ))}
+        <br/>
         <div>
           <Link to="/admin/addemployee" style={{ color: "blue" }}>
-            Add Employee
+            <Button variant="contained">Add Employee</Button>
           </Link>
         </div>
       </div>

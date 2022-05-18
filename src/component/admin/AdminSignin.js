@@ -47,7 +47,7 @@ const AdminSignin = ({ setToken, setAdmin }) => {
             placeholder="Password"
             onChange={inputHandler}
           />
-          <button>AdminSignin</button>
+          <button>Admin SignIn</button>
         </form>
       </div>
     </>

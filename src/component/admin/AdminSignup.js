@@ -61,7 +61,7 @@ const AdminSignup = () => {
             placeholder="Password"
             onChange={inputHandler}
           />
-          <button>Signup</button>
+          <button>Admin SignUp</button>
           {alert && (
             <div className="alert-message">
               <p>{alert}</p>
