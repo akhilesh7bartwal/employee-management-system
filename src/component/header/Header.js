@@ -16,7 +16,8 @@ const Header = () => {
           <Typography
             variant="h6"
             noWrap
-            component="a"
+            component={Link}
+            to='/'
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -26,15 +27,14 @@ const Header = () => {
               color: 'white',
               textDecoration: 'none',
             }}
-          >
-            <Link to='/'>Employee Management System</Link>           
+          >Employee Mannagement System        
           </Typography>
 
 
           <Box justifyContent="flex-end" alignItems="flex-end" sx={{ flexGrow: 0 }}>
             
 
-            <Link to='/admin'>
+            <Link to='/admin' style={{ textDecoration: 'none' }}>
                   <Button 
                     sx={{ height:40, my: 2, fontWeight: 800, color: 'white', display: 'block',
                     }}>

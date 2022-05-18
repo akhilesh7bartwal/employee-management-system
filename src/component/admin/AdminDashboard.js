@@ -8,6 +8,7 @@ import { connect } from "react-redux";
 import Header from "../header/Header";
 import { Button } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
 
 const AdminDashboard = ({getToken,getAdmin}) =>{
 
@@ -80,8 +81,7 @@ const AdminDashboard = ({getToken,getAdmin}) =>{
                 navigate(`/admin/edit/${employee._id}`);
               }}
             >
-              <button>Edit</button>
-              
+              <Button variant="outlined" startIcon={<EditIcon/>}>Edit</Button>
             </div>
             <div
               className="delete"
@@ -91,12 +91,13 @@ const AdminDashboard = ({getToken,getAdmin}) =>{
             >
               <Button variant="outlined" color="error" startIcon={<DeleteIcon/>}>Delete</Button>             
             </div>
+            <br/>
           </div>
         ))}
         <br/>
         <div>
           <Link to="/admin/addemployee" style={{ color: "blue" }}>
-            <Button variant="contained">Add Employee</Button>
+            <Button variant="contained" style={{ textDecoration: 'none' }}>Add Employee</Button>
           </Link>
         </div>
       </div>
