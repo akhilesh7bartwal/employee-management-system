@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import { connect } from "react-redux";
+import Header from "../header/Header";
 
 const AdminDashboard = ({getToken,getAdmin}) =>{
 
@@ -39,6 +40,10 @@ const AdminDashboard = ({getToken,getAdmin}) =>{
         <>
      <div className="admin-dashboard">
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <div>
+          <Header/>
+        </div>
+
           <div>
             <div>Admin</div>
             <div>

@@ -17,27 +17,31 @@ const Header = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
-              color: 'inherit',
+              color: 'white',
               textDecoration: 'none',
             }}
           >
-            Employee Management System
+            <Link to='/'>Employee Management System</Link>           
           </Typography>
 
 
           <Box justifyContent="flex-end" alignItems="flex-end" sx={{ flexGrow: 0 }}>
             
-              <Button 
-                    sx={{ height:40, my: 2, fontWeight: 700, color: 'black', display: 'block' }}>
-                      <Link to='/admin' >Admin</Link>
-              </Button>
+
+            <Link to='/admin'>
+                  <Button 
+                    sx={{ height:40, my: 2, fontWeight: 800, color: 'white', display: 'block',
+                    }}>
+                        Admin 
+                  </Button>
+            </Link>
+              
            
           </Box>
         </Toolbar>

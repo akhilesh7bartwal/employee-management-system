@@ -76,8 +76,8 @@ import axios from 'axios';
           </div>
         </div>
       </form>  
-      <span align="center">
-        Already have an account? <Link to="/signin">Signin</Link>
+      <span align="center" >
+        Already have an account? <Link to="/signin"><strong font-Weight="bold">Sign In</strong></Link>
       </span>             
         </>
     )

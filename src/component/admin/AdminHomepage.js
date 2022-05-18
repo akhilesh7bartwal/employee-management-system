@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import Header from "../header/Header"
 import AdminSignin from "./AdminSignin"
 import AdminSignup from "./AdminSignup"
 
@@ -8,10 +8,9 @@ const AdminHomepage = () =>{
     return(
         <>
             <div>
-            <Link to='/header'></Link>
+                <Header/>
             </div>
-            <div className="container">
-                
+            <div className="container">               
                 <AdminSignup/>
                 <AdminSignin/>
             </div>

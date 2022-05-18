@@ -5,20 +5,6 @@ import { Link } from 'react-router-dom';
 
 const DisplayEmployees = ({employee}) =>{
 
-//     useEffect ( () =>{
-//     const config = {
-//         headers:{
-//             "auth-token": getemployees
-//         },
-//     };
-//     axios.get(`http://localhost:3030/getemployees`,config)
-//     .then(response => console.log(response))
-//     .catch(error => console.log(error));
-
-// });
-
-    //console.log(getemployee)
-
 
     return(
         <>
