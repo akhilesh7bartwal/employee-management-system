@@ -13,7 +13,7 @@ const AdminDashboard = ({getToken,getAdmin}) =>{
 
     useEffect(() =>{
         axios.get(
-            "http://localhost:3030/admin/getemployees",
+            "https://employee-management-system-backend-chi.vercel.app/admin/getemployees",
             {
                 headers:{
                     "Content-Type": "application/json",
@@ -26,7 +26,7 @@ const AdminDashboard = ({getToken,getAdmin}) =>{
     });
 
     const deleteEmployee =(id) =>{
-        axios.delete(`http://localhost:3030/admin/delete/${id}`,
+        axios.delete(`https://employee-management-system-backend-chi.vercel.app/admin/delete/${id}`,
         {
             headers:{
                 "Content-Type": "application/json",

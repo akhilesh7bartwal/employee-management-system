@@ -18,7 +18,7 @@ const EditEmployee = ({ getToken }) => {
     event.preventDefault();
     axios
       .put(
-        `http://localhost:3030/admin/edit/${id}`,
+        `https://employee-management-system-backend-chi.vercel.app/admin/edit/${id}`,
         input,
         {
           headers: {

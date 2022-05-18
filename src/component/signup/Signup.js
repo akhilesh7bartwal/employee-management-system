@@ -24,7 +24,7 @@ import axios from 'axios';
     const handleSubmit = (event) =>{
         event.preventDefault();
 
-        axios.post("http://localhost:3030/employee/signup",{
+        axios.post("https://employee-management-system-backend-chi.vercel.app/employee/signup",{
           name: employeeData.name,
           email: employeeData.email,
           address: employeeData.address,

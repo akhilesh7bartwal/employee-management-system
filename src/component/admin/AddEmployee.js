@@ -22,7 +22,7 @@ const AddEmployee = ({ getToken }) => {
     if (employee.password.length >= 5) {
       axios
         .post(
-          "http://localhost:3030/admin/add",
+          "https://employee-management-system-backend-chi.vercel.app/admin/add",
           employee,
           {
             headers: {

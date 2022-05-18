@@ -23,7 +23,7 @@ const AdminSignup = () => {
     if (input.password.length >= 5) {
       axios
         .post(
-          "http://localhost:3030/admin/signup",
+          "https://employee-management-system-backend-chi.vercel.app/admin/signup",
           input
         )
         .then((response) => setAlert(response.data));

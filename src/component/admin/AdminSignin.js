@@ -21,7 +21,7 @@ const AdminSignin = ({ setToken, setAdmin }) => {
     event.preventDefault();
     axios
       .post(
-        "http://localhost:3030/admin/signin",
+        "https://employee-management-system-backend-chi.vercel.app/admin/signin",
         input
       )
       .then((response) => {
